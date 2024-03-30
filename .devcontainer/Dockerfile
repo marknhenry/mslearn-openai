@@ -32,4 +32,5 @@ RUN conda update -n base -c defaults conda -y \
     && conda init bash \
     && conda install -y numpy pandas matplotlib scipy sympy autopep8 requests \
     && conda install -c conda-forge notebook \
-    && conda clean -a
+    && conda clean -a \
+    && pip install -y python-dotenv openai
